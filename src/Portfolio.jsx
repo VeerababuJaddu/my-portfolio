@@ -422,14 +422,14 @@ export default function Portfolio() {
                   onMouseLeave={e => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12 }}>
                     <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: p.color, background: `${p.color}18`, borderRadius: 4, padding: "3px 8px" }}>{p.tag}</span>
-                    {p.github && 
+                    {(p.github || p.linkedin) && (
                       
                     
   <a
-    href={p.github}
+    href={p.github || p.linkedin}
     target="_blank"
     rel="noopener noreferrer"
-    aria-label="Open project on GitHub"
+    aria-label="Open project link"
     style={{ color: p.color, display: "inline-flex", alignItems: "center" }}
   >
     <ExternalLink />
