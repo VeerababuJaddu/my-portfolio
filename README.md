@@ -1,3 +1,6 @@
+*Live Portfolio:* [Visit My Portfolio](https://my-portfolio-one-eta-30.vercel.app)
+
+---
 # Jaddu Veera Babu — Portfolio
 
 Personal portfolio website for Jaddu Veera Babu, AI & Machine Learning Engineer.
