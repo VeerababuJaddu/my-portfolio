@@ -259,7 +259,7 @@ export default function Portfolio() {
               onMouseLeave={e => { e.target.style.transform = ""; e.target.style.boxShadow = "0 4px 20px rgba(251,191,36,0.3)"; }}>
               View Projects
             </button>
-            <a href="#" style={{ display: "flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,0.05)", color: "#e2e8f0", border: "1px solid rgba(255,255,255,0.15)", padding: "14px 28px", borderRadius: 10, fontWeight: 600, fontSize: 15, cursor: "pointer", textDecoration: "none", transition: "background 0.2s" }}
+            <a href="/resume.pdf" download="Jaddu_Veera_Babu_Resume.pdf" style={{ display: "flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,0.05)", color: "#e2e8f0", border: "1px solid rgba(255,255,255,0.15)", padding: "14px 28px", borderRadius: 10, fontWeight: 600, fontSize: 15, cursor: "pointer", textDecoration: "none", transition: "background 0.2s" }}
               onMouseEnter={e => e.currentTarget.style.background = "rgba(255,255,255,0.1)"}
               onMouseLeave={e => e.currentTarget.style.background = "rgba(255,255,255,0.05)"}>
               <Download /> Resume
