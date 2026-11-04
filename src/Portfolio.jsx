@@ -424,7 +424,7 @@ export default function Portfolio() {
     href={p.github}
     target="_blank"
     rel="noopener noreferrer"
-    aria-label={Open ${p.title} on GitHub}
+    aria-label="Open project on GitHub"
     style={{ color: p.color, display: "inline-flex", alignItems: "center" }}
   >
     <ExternalLink />
