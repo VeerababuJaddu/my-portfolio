@@ -310,7 +310,7 @@ export default function Portfolio() {
                 <h3 style={{ fontSize: 17, fontWeight: 700, color: "#f1f5f9", marginBottom: 6 }}>B.Tech in AI & Machine Learning</h3>
                 <p style={{ color: "#94a3b8", fontSize: 15 }}>Swarnandhra Institute of Engineering and Technology</p>
                 <div style={{ display: "flex", justifyContent: "space-between", marginTop: 24, paddingTop: 20, borderTop: "1px solid rgba(255,255,255,0.07)" }}>
-                  <div><p style={statLabel}>GPA</p><p style={statVal}>7.28</p></div>
+                  <div><p style={statLabel}>GPA</p><p style={statVal}>7.16</p></div>
                   <div><p style={statLabel}>Degree</p><p style={statVal}>B.Tech</p></div>
                   <div><p style={statLabel}>Field</p><p style={statVal}>AI & ML</p></div>
                 </div>
