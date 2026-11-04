@@ -138,6 +138,7 @@ const projects = [
   },
   {
     title: "Real-Time Traffic Sign Detection",
+    linkedin:"https://lnkd.in/p/g6_wqaUe",
     tag: "Computer Vision",
     stack: ["Python", "YOLOv8", "OpenCV"],
     color: "#f59e0b",
@@ -146,6 +147,7 @@ const projects = [
   },
   {
     title: "Conversational Telegram Bot",
+    linkedin:"https://lnkd.in/p/gBVGJ5zy",
     tag: "NLP",
     stack: ["Python", "Gemini API", "Telegram Bot API"],
     color: "#818cf8",
@@ -154,6 +156,7 @@ const projects = [
   },
   {
     title: "Global Internet Usage Dashboard",
+    linkedin: "https://lnkd.in/p/gWnuBihG",
     tag: "Analytics",
     stack: ["Power BI"],
     color: "#60a5fa",
@@ -419,7 +422,9 @@ export default function Portfolio() {
                   onMouseLeave={e => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12 }}>
                     <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: p.color, background: `${p.color}18`, borderRadius: 4, padding: "3px 8px" }}>{p.tag}</span>
-                    {p.github && (
+                    {p.github && 
+                      
+                    
   <a
     href={p.github}
     target="_blank"
