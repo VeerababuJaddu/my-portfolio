@@ -419,7 +419,17 @@ export default function Portfolio() {
                   onMouseLeave={e => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12 }}>
                     <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: p.color, background: `${p.color}18`, borderRadius: 4, padding: "3px 8px" }}>{p.tag}</span>
-                    <ExternalLink />
+                    {p.github && (
+  <a
+    href={p.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label={Open ${p.title} on GitHub}
+    style={{ color: p.color, display: "inline-flex", alignItems: "center" }}
+  >
+    <ExternalLink />
+  </a>
+)}
                   </div>
                   <h3 style={{ fontSize: 18, fontWeight: 700, color: "#f1f5f9", marginBottom: 12 }}>{p.title}</h3>
                   <p style={{ color: "#94a3b8", fontSize: 14, lineHeight: 1.7, flex: 1 }}>{p.desc}</p>
