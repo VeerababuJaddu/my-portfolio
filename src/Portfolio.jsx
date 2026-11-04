@@ -195,12 +195,43 @@ export default function Portfolio() {
   const tags = ["All", ...new Set(projects.map(p => p.tag))];
   const filtered = filter === "All" ? projects : projects.filter(p => p.tag === filter);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch(
+      "https://api.emailjs.com/api/v1.0/email/send",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          service_id: "service_mw2idt8",
+          template_id: "template_yti3okr",
+          user_id: "Gz8wzY8xjHAgu6T_H",
+          template_params: {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+          },
+        }),
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error("Email could not be sent");
+    }
+
     setFormSent(true);
     setTimeout(() => setFormSent(false), 4000);
     setFormData({ name: "", email: "", message: "" });
-  };
+
+  } catch (error) {
+    console.error("Email sending failed:", error);
+    alert("Message could not be sent. Please try again.");
+  }
+};
 
   const navItems = ["About", "Skills", "Experience", "Projects", "Certifications", "Contact"];
 
